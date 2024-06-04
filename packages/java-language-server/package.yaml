@@ -30,7 +30,7 @@ source:
         dap: exec:dist/debug_adapter_linux.sh
     - target: win
       run: |
-        bash .\scripts\link_windows.sh
+        bash ./scripts/link_windows.sh
         mvn package -DskipTests
       bin:
         lsp: dist/lang_server_windows.cmd
